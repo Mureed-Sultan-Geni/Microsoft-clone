@@ -1,0 +1,235 @@
+.header-main {
+  @apply flex col-start-2 col-end-24;
+}
+.header-logo {
+  @apply w-32 h-10;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  a {
+    padding-bottom: 0;
+  }
+}
+
+.menu-1 {
+  height: fit-content;
+  @apply justify-start;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bannerMain {
+  max-width: 100vw;
+  width: 100%;
+  @apply relative;
+
+  .introBackground {
+    width: 100vw;
+    height: 650px;
+  }
+  .text {
+    @apply static w-full;
+    @apply m-auto;
+    @apply text-center;
+    @screen md {
+      @apply z-10;
+      @apply self-center;
+      @apply absolute;
+      @apply h-full flex flex-col;
+      @apply justify-center;
+      @apply pl-10;
+      @apply w-2o5;
+      @apply text-left;
+    }
+  }
+}
+.card-box {
+  @apply mt-10;
+  @screen sm {
+    @apply block;
+  }
+  @screen lg {
+    @apply flex flex-wrap;
+  }
+}
+.btnBox {
+  border-radius: 0%;
+  @apply bg-black;
+  @apply text-white;
+  @apply px-3;
+  @apply py-2;
+}
+.box1 {
+  @screen sm {
+    @apply w-4o5;
+    @apply m-auto;
+  }
+  @screen lg {
+    @apply w-1o5;
+    @apply h-full;
+    @apply mr-6;
+    @apply m-auto;
+    @apply mt-8;
+  }
+}
+#mobile {
+  @apply relative;
+  @apply mt-8;
+  @apply flex relative w-screen;
+  .mobile-txt {
+    @apply z-10 absolute;
+    @apply self-center;
+    @apply ml-10;
+  }
+  .mobile-img {
+    max-width: 100vw;
+    width: 100%;
+    @apply w-full;
+  }
+  a {
+    @apply text-white;
+    @apply bg-black;
+    @apply pb-0;
+    @apply px-4;
+    @apply py-2;
+    @apply mt-4;
+  }
+}
+#office365 {
+  .txt {
+    @apply flex justify-center items-center;
+    @apply bg-blue-600 text-white;
+  }
+  .office-banner {
+    @screen lg {
+      @apply flex;
+      @apply relative;
+    }
+    @apply block;
+    .text-box {
+      @screen lg {
+        position: absolute;
+        right: 0;
+        margin-right: 10vw;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        @apply w-auto;
+      }
+      @apply static m-auto w-4o5;
+    }
+  }
+  .btn-banner {
+    @apply bg-blue-700 text-white;
+  }
+  .office-txt {
+    @apply flex justify-center items-center;
+    width: 60vw;
+    text-align: center;
+    @apply m-auto;
+  }
+  .officetype {
+    @screen lg {
+      @apply relative flex;
+      max-width: 40vw;
+      width: 100%;
+      @apply m-auto;
+    }
+    ul {
+      @apply m-auto w-4o5;
+      button {
+        width: 100%;
+      }
+    }
+    .img {
+      @screen md {
+        @apply relative;
+        width: 100%;
+      }
+
+      @apply relative;
+      @apply h-64;
+    }
+  }
+}
+.showImg {
+  display: block;
+}
+#plan {
+  @apply flex justify-center items-center flex-col;
+  max-width: 90vw;
+  width: 100%;
+  @apply m-auto;
+  p {
+    text-align: center;
+  }
+  .plan-mainbox {
+    @screen lg {
+      @apply flex justify-center;
+      @apply flex-row;
+    }
+    @apply flex-col;
+  }
+  .box {
+    max-width: 350px;
+    width: 100%;
+    @apply relative;
+    @apply mx-4;
+    @apply flex flex-col items-center;
+    .txtbox {
+      @screen lg {
+        @apply absolute;
+        max-width: 300px;
+        width: 100%;
+        @apply m-auto;
+        bottom: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @apply static;
+      button {
+        padding: 0;
+        width: 100%;
+        white-space: normal;
+        @apply text-white text-sm;
+        border: none;
+        border-bottom: 1px solid black;
+        @apply py-2;
+      }
+    }
+    .learn-more {
+      @apply bg-white;
+      @apply text-black;
+      @apply mt-4;
+      padding: 3px 40px;
+    }
+    a {
+      color: white;
+    }
+  }
+}
+
+#connect-office {
+  @apply mt-40;
+  .text-area {
+    @screen lg {
+      max-width: 400px;
+      wiidth: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    max-width: 90%;
+    @apply m-auto;
+    text-align: center;
+  }
+}
+.flexRow {
+  @screen lg {
+    @apply flex justify-center items-center flex-row;
+  }
+  @apply flex-col;
+}
